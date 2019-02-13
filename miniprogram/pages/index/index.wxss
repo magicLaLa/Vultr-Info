@@ -1,0 +1,107 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  box-sizing: border-box;
+}
+
+.padl20 {
+  padding-left: 20rpx;
+}
+.mt10 {
+  margin: 10rpx 0;
+}
+
+.h1 {
+  font-size: 32rpx;
+  color:  #00a4ff;
+  height: 40rpx;
+  padding-top: 10rpx;
+}
+
+.userinfo {
+  width: 100%;
+  height: 150rpx;
+  background-color: #a6cef1;
+  font-size: 32rpx;
+  color: #fff;
+  position: relative;
+}
+.userAv {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 20rpx;
+  bottom: 20rpx;
+}
+.headText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30rpx;
+}
+.adetails {
+  width: 100%;
+  height: 100rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #b7e8f5; */
+}
+.adetails {
+  color: #666;
+  font-size: 26rpx;
+}
+.adetails .cont2 view {
+  text-align: right;
+}
+.adetails .cont2 .remText {
+  font-size: 30rpx;
+  color: #7cb342;
+}
+.mbt {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+.moneyBox .mbt .mbt1 {
+  color: #60abec;
+}
+.progBox {
+  margin-top: 10rpx;
+  padding: 0 20rpx;
+}
+.prog {
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+
+.v2 {
+  margin-top: 20rpx;
+}
+.v2Cont {
+  padding: 10rpx 20rpx;
+  font-size: 30rpx;
+}
+.v2T {
+  color: #999;
+  margin-bottom: 5rpx;
+}
+.v2Tt {
+  color: rgb(238, 165, 106);
+}
+.v2Box {
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 0;
+}
+.conBox {
+  display: flex;
+  justify-content: space-between;
+}

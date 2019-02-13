@@ -1,0 +1,64 @@
+/**app.wxss**/
+.container {
+  box-sizing: border-box;
+} 
+/* loading */
+.load-plug .loading{
+  border: 2PX solid #00a4ff;
+  border-right: 2PX solid #e9e9e9;
+  border-bottom: 2PX solid #e9e9e9;
+  height: 16PX;
+  width: 16PX;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-animation: loading .6s infinite linear;
+  animation: loading .6s infinite linear;
+  z-index: 9999;
+}
+@-webkit-keyframes loading {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.load-plug{
+position: fixed;
+z-index: 99;
+top: 0;bottom: 0;
+width: 100%;
+height: 100%;
+font-size: 16PX;
+color: #333333;
+background-color: rgba(225, 225, 225, .3);
+}
+
+.load-plug .o-lay{
+vertical-align:middle;
+  display:table-cell;
+}
+.load-plug .o-wrap{
+width: 100%;
+height: 100%;
+display:table;
+  text-align: center;
+}
+.load-plug .load-img{
+width: 1.5em;
+position: relative;
+top: -2.5em;
+}
+@media screen and (min-width: 414PX) {
+ .dialog-plug .d-con{max-width: 340PX !important;}
+ #confirmPlug #inform{width: 340PX !important;}
+}

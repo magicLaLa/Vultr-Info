@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 用户 -->
+  <view class="userinfo">
+    <view class="userAv">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="headText">Vultr-Info</view>
+  </view>
+  <!-- 第一部分 -->
+  <view class="h1 padl20">Account Details：</view>
+  <view class="adetails">
+    <view class="cont1">
+      <view>Email: {{email}}</view>
+      <view>Name: {{name}}</view>
+    </view>
+    <view class="cont2">
+      <view class="remText">${{remainCredit}}</view>
+      <view>Remaining Credit</view>
+    </view>
+  </view>
+  <!-- 账户金额 -->
+  <view class="moneyBox">
+    <view class="mbt">
+      <text class="mbt1">Charges this month: ${{pending_charges}}</text>
+      <text class="mbt2">{{moneyPercent}}%</text>
+    </view>
+    <view class="progBox">
+      <progress class="prog" percent="{{moneyPercent}}" stroke-width="4" activeColor="#00a4ff" active="true" backgroundColor="#eee"/>
+    </view>
+  </view>
+  <!-- 第二部分 -->
+  <view class="h1 padl20 v2">Server Details：</view>
+  <view class="v2Cont">
+    <view class="v2T v2Box">IP: <text class="v2Tt">{{ip}}</text></view>
+    <view class="v2T v2Box">CPU: <text class="v2Tt">{{cpu}}</text></view>
+    <view class="v2T v2Box">RAM: <text class="v2Tt">{{ram}}</text></view>
+    <view class="v2T v2Box">SERVER_TYPE: <text class="v2Tt">{{server_type}}</text></view>
+    <view class="v2T v2Box">STATUS: <text class="v2Tt">{{status}}</text></view>
+    <view class="v2T v2Box">LOCATION: <text class="v2Tt">{{location}}</text></view>
+    <view class="conBox v2T">
+      <text class="cb1">Current changes: <text class="v2Tt">${{pending_charges}}</text></text>
+      <text class="cb2">{{currentChangesPer}}%</text>
+    </view>
+    <progress class="prog mt10" percent="{{currentChangesPer}}" stroke-width="4" activeColor="#EA5100" active="true" backgroundColor="#eee"/>
+    <view class="conBox v2T">
+      <text class="cb1">Server usage: <text class="v2Tt">{{serverUsage}} GB</text></text>
+      <text class="cb2">{{serverUsagePer}}%</text>
+    </view>
+    <progress class="prog mt10" percent="{{serverUsagePer}}" stroke-width="4" activeColor="#EA5100" active="true" backgroundColor="#eee"/>
+  </view>
+</view>
+
+<!-- Loading -->
+<view hidden="{{hideLoading}}" class='load-plug' id='load-plug'>
+  <view class='o-wrap'>
+    <view  class='o-lay'>
+      <view class='loading'></view>
+    </view>
+  </view>
+</view>
